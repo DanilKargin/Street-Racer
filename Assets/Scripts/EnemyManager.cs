@@ -30,6 +30,8 @@ namespace StreetRacer
 			for(int i = 0; i < vehiclePrefabs.Length; i++)
 			{
 				GameObject enemy = Object.Instantiate(vehiclePrefabs[i], _enemySpawnPosition[1], Quaternion.identity);
+				enemy.transform.localScale = new Vector3(240.0f, 240.0f, 240.0f);
+				enemy.transform.Rotate(0, -90, 0);
 				enemy.SetActive(false);
 				enemy.transform.SetParent(_enemyHolder.transform);
 				enemy.name = "Enemy";

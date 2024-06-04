@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace StreetRacer
@@ -14,7 +13,7 @@ namespace StreetRacer
 		private float Control = 0.03f;
 
 		private void Start()
-		{
+		{		
 			_carObject = GetComponent<Rigidbody>();
 			_carObject.isKinematic = true;
 			_carObject.useGravity = false;
@@ -44,6 +43,8 @@ namespace StreetRacer
 			}
 
 			GameObject child = Instantiate(LevelManager.Instance.VehiclePrefabs[index], transform);
+			child.transform.localScale = new Vector3(240.0f, 240.0f, 240.0f);
+			child.transform.Rotate(0, -90, 0);
 			_colliderComponent = child.GetComponent<Collider>();
 			_colliderComponent.isTrigger = true;
 		}

@@ -1,27 +1,38 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace StreetRacer
 {
 	public class LevelManager : MonoBehaviour
 	{
 		public static LevelManager Instance;
-		[SerializeField]
-		private GameObject _roadPrefab;
+
+		public Vector3 _nextRoadPosition = Vector3.zero;
+
 		[SerializeField]
 		private GameObject[] _vehaclePrefabs;
-		[SerializeField] 
-		private float _moveSpeed = 10;
+		[SerializeField]
+		private GameObject[] _maps;
+		[SerializeField]
+		private TMP_Text _scoreText;
+		[SerializeField]
+		private TMP_Text _gameOverScoreText;
+		
 
-		private List<GameObject> _roadList;
-		private Vector3 _nextRoadPosition = Vector3.zero;
-		private GameObject _roadHolder;
+		private MapManager _mapManager;
 		private PlayerController _playerController;
-		private int _roadAtLastIndex, _roadAtTopIndex;
+		private MapType _mapType;
+		private RideType _rideType;
+
 		private EnemyManager _enemyManager;
+		private int _playerScore = 0;
+		private float _gameTimer;
 
 		public PlayerController PlayerController { get { return _playerController; } }
 		public GameObject[] VehiclePrefabs { get { return _vehaclePrefabs; } }
+		
 
 		private void Awake()
 		{
@@ -37,20 +48,9 @@ namespace StreetRacer
 
 		private void Start()
 		{
-			_roadHolder = new GameObject("RoadHolder");
-			_roadList = new List<GameObject>();
-
-			for(int i = 0; i < 15; i++)
-			{
-				GameObject road = Instantiate(_roadPrefab, _nextRoadPosition, Quaternion.identity);
-				road.name = "Road " + i.ToString();
-				road.transform.SetParent(_roadHolder.transform);
-				_nextRoadPosition += Vector3.forward * 10;
-				_roadList.Add(road);
-			}
-
-			_enemyManager = new EnemyManager(new Vector3(_nextRoadPosition.x, _nextRoadPosition.y - 2.1f, _nextRoadPosition.z), _moveSpeed);
-
+			_enemyManager = new EnemyManager(new Vector3(_nextRoadPosition.x, _nextRoadPosition.y, _nextRoadPosition.z), 5);
+			GameObject map = new GameObject("MapHolder");
+			
 			SpawnPlayer();
 
 			_enemyManager.SpawnEnemies(_vehaclePrefabs);
@@ -59,7 +59,7 @@ namespace StreetRacer
 		private void SpawnPlayer()
 		{
 			GameObject player = new GameObject("Player");
-			player.transform.position = new Vector3(0, -2.1f, 13);
+			player.transform.position = new Vector3(0, 0, 13);
 			player.AddComponent<PlayerController>();
 			_playerController = player.GetComponent<PlayerController>();
 		}
@@ -68,35 +68,17 @@ namespace StreetRacer
 		{
 			if (GameManager.Singleton.GameStatus == GameStatus.PLAYING)
 			{
-				MoveRoad();
-			}
-		}
-
-		private void MoveRoad()
-		{
-			for(int i =0; i < _roadList.Count; i++)
-			{
-				_roadList[i].transform.Translate(-transform.forward * _moveSpeed * Time.deltaTime);
-			}
-
-			if (_roadList[_roadAtLastIndex].transform.position.z <= -10) 
-			{
-				_roadAtTopIndex = _roadAtLastIndex - 1;
-
-				if(_roadAtTopIndex < 0)
+				_gameTimer += Time.deltaTime;
+				_mapManager.MoveRoad(this.gameObject);
+				if (_gameTimer > 0.1f)
 				{
-					_roadAtTopIndex = _roadList.Count - 1;
-				}
-
-				_roadList[_roadAtLastIndex].transform.position = _roadList[_roadAtTopIndex].transform.position + Vector3.forward * 15;
-
-				_roadAtLastIndex++;
-				if(_roadAtLastIndex >= _roadList.Count)
-				{
-					_roadAtLastIndex = 0;
+					_playerScore += 2;
+					_scoreText.text = _playerScore.ToString();
+					_gameTimer = 0;
 				}
 			}
 		}
+
 
 		private void OnTriggerEnter(Collider other)
 		{
@@ -105,16 +87,25 @@ namespace StreetRacer
 				_enemyManager.ActivateEnemy();
 			}
 		}
-		
+		public void SetRideType(RideType type)
+		{
+			_rideType = type;
+		}
+		public void SetMapType(MapType type)
+		{
+			_mapType = type;
+		}
 		public void GameOver()
 		{
+			_gameOverScoreText.text = "Количество очков: " + _playerScore.ToString();
 			GameManager.Singleton.GameStatus = GameStatus.FAILED;
-			UIManager.Instance.GameOver();
+			//UINavigator.Instance.GameOver();
 		}
 
 		public void GameStarted()
 		{
 			GameManager.Singleton.GameStatus = GameStatus.PLAYING;
+			_playerScore = 0;
 			_enemyManager.ActivateEnemy();
 			_playerController.GameStarted();
 		}

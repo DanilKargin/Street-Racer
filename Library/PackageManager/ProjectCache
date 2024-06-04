@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638499030453171080
-    m_Hash: 155884167
+      ticks: 638525212677769061
+    m_Hash: 2259162071
   m_LockFileStatus:
     m_FilePath: K:/UnityProjects/StreetRacer_Beta/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638499030453281229
-    m_Hash: 1790213296
+      ticks: 638506242602755624
+    m_Hash: 3448000629
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -157,6 +157,7 @@ m_ResolvedPackages:
     - 9.0.3
     - 9.0.4
     - 9.1.0
+    - 9.1.1
     - 10.0.0-pre.1
     - 10.0.0-pre.2
     - 10.0.0
@@ -165,9 +166,11 @@ m_ResolvedPackages:
     - 10.0.3
     - 10.1.0
     - 10.1.1
+    - 10.1.2
     compatible:
     - 9.0.4
     - 9.1.0
+    - 9.1.1
     recommended: 9.0.4
     deprecated: []
   dependencies:
@@ -929,6 +932,84 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
+  testable: 0
+  isDirectDependency: 1
+  version: 3.2.1
+  source: 1
+  resolvedPath: K:\UnityProjects\StreetRacer_Beta\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.2.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
+    compatible:
+    - 3.2.1
+    recommended: 3.2.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638186318800000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
+    path: 
+  unityLifecycle:
+    version: 3.2.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.test-framework@1.1.33
   testable: 0
   isDirectDependency: 1
@@ -1187,6 +1268,7 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -1196,12 +1278,14 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -1211,9 +1295,10 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
-    recommended: 3.0.8
+    recommended: 3.0.9
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -1363,6 +1448,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     compatible:
     - 1.7.5
     - 1.7.6
@@ -1373,6 +1459,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     recommended: 1.7.6
     deprecated: []
   dependencies:
@@ -3610,10 +3697,12 @@ m_ResolvedPackages:
     - 1.3.2
     - 1.4.0
     - 1.4.1
+    - 1.4.2
     compatible:
     - 1.3.2
     - 1.4.0
     - 1.4.1
+    - 1.4.2
     recommended: 1.3.2
     deprecated: []
   dependencies: []
@@ -3975,6 +4064,7 @@ m_ResolvedPackages:
     - 9.0.2
     - 9.0.3
     - 9.0.4
+    - 9.0.5
     compatible:
     - 8.0.1
     - 8.0.2
@@ -4179,6 +4269,7 @@ m_ResolvedPackages:
     - 2.4.0-pre.2
     - 2.4.0-pre.5
     - 2.4.0
+    - 2.4.1
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4199,6 +4290,7 @@ m_ResolvedPackages:
     - 2.4.0-pre.2
     - 2.4.0-pre.5
     - 2.4.0
+    - 2.4.1
     recommended: 1.2.4
     deprecated: []
   dependencies:
@@ -4462,6 +4554,7 @@ m_ResolvedPackages:
     - 1.8.12
     - 1.8.13
     - 1.8.14
+    - 1.8.15
     compatible:
     - 1.8.9
     - 1.8.10
@@ -4469,7 +4562,8 @@ m_ResolvedPackages:
     - 1.8.12
     - 1.8.13
     - 1.8.14
-    recommended: 1.8.14
+    - 1.8.15
+    recommended: 1.8.15
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
