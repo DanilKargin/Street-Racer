@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace StreetRacer
 {
-	public class EnemyManager
+	public abstract class EnemyManager
 	{
-		private List<EnemyController> _deactiveEnemyList;
-		private Vector3[] _enemySpawnPosition = new Vector3[4];
+		protected List<EnemyController> _deactiveEnemyList;
+		protected Vector3[] _enemySpawnPosition = new Vector3[4];
 
-		private GameObject _enemyHolder;
-		private float _moveSpeed;
+		protected GameObject _enemyHolder;
+		protected float _moveSpeed;
 
 		public EnemyManager(Vector3 spawnPos, float moveSpeed)
 		{
@@ -27,11 +27,10 @@ namespace StreetRacer
 
 		public void SpawnEnemies(GameObject[] vehiclePrefabs)
 		{
-			for(int i = 0; i < vehiclePrefabs.Length; i++)
+			for (int i = 0; i < vehiclePrefabs.Length; i++)
 			{
 				GameObject enemy = Object.Instantiate(vehiclePrefabs[i], _enemySpawnPosition[1], Quaternion.identity);
 				enemy.transform.localScale = new Vector3(240.0f, 240.0f, 240.0f);
-				enemy.transform.Rotate(0, -90, 0);
 				enemy.SetActive(false);
 				enemy.transform.SetParent(_enemyHolder.transform);
 				enemy.name = "Enemy";
@@ -41,21 +40,16 @@ namespace StreetRacer
 			}
 		}
 
-		public void ActivateEnemy()
-		{
-			if(_deactiveEnemyList.Count > 0)
-			{
-				EnemyController enemy = _deactiveEnemyList[Random.Range(0, _deactiveEnemyList.Count)].gameObject.GetComponent<EnemyController>();
-				_deactiveEnemyList.Remove(enemy);
-				enemy.transform.position = _enemySpawnPosition[Random.Range(0, _enemySpawnPosition.Length)];
-				enemy.ActivateEnemy();
-			}
-		}
+		public abstract void ActivateEnemy();
 
 		public void DeactivateEnemy(EnemyController enemy)
 		{
 			enemy.gameObject.SetActive(false);
 			_deactiveEnemyList.Add(enemy);
+		}
+		~EnemyManager()
+		{
+			Object.Destroy(_enemyHolder);
 		}
 	}
 }

@@ -4,14 +4,15 @@ using UnityEngine;
 
 namespace StreetRacer
 {
-	public abstract class MapManager : MonoBehaviour
+	public abstract class MapManager
 	{
+		[SerializeField]
 		protected GameObject _roadHolder;
 		protected List<GameObject> _roadList;
 		private int _roadAtLastIndex, _roadAtTopIndex;
 
 		[SerializeField]
-		private float _moveSpeed = 10;
+		private float _moveSpeed = 30;
 
 		public abstract void DrawMap();
 		public void MoveRoad(GameObject gm)
@@ -39,9 +40,9 @@ namespace StreetRacer
 				}
 			}
 		}
-		public void CleanRoad()
+		~MapManager()
 		{
-			Destroy(_roadHolder);
+			Object.Destroy(_roadHolder);
 		}
 	}
 }

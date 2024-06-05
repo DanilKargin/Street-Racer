@@ -7,44 +7,52 @@
       "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\ui\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\summermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\summermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\ui\\uinavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uinavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\wintermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wintermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\enemyspawn\\duoenemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawn\\duoenemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\enemyspawn\\monoenemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawn\\monoenemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\maps\\summermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\maps\\summermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\maps\\wintermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\maps\\wintermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\ui\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\ui\\uinavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uinavigator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C65D8C7-BFC3-95F6-A4F5-75C01E729CE1}|Assembly-CSharp.csproj|K:\\UnityProjects\\StreetRacer_Beta\\assets\\scripts\\enums\\maptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,47 +74,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAiwHYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T13:36:57.607Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UINavigator.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\UINavigator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UINavigator.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\UINavigator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\UINavigator.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBsAAAADAAAA",
+              "DocumentIndex": 1,
+              "Title": "DuoEnemySpawner.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemySpawn\\DuoEnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawn\\DuoEnemySpawner.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemySpawn\\DuoEnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawn\\DuoEnemySpawner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:13:12.046Z"
+              "WhenOpened": "2024-06-05T13:30:46.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainMenuUI.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\MainMenuUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenuUI.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\MainMenuUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenuUI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Title": "MonoEnemySpawner.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemySpawn\\MonoEnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawn\\MonoEnemySpawner.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemySpawn\\MonoEnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawn\\MonoEnemySpawner.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:13:00.201Z"
+              "WhenOpened": "2024-06-05T11:55:49.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameUI.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\GameUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameUI.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\GameUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\GameUI.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAA3wDUAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "EnemyManager.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyManager.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyManager.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCAAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:12:45.282Z"
+              "WhenOpened": "2024-06-02T13:59:35.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyController.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T14:18:04.671Z"
             },
             {
               "$type": "Document",
@@ -116,38 +152,61 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\MapManager.cs",
               "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\MapManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MapManager.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAgAAAALAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T12:07:04.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SummerMap.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\SummerMap.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SummerMap.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\SummerMap.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SummerMap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T19:02:23.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LevelManager.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\LevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\LevelManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwDkAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T13:36:57.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "GameUI.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\GameUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameUI.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\GameUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\GameUI.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwB4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T14:12:45.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SummerMap.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\Maps\\SummerMap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Maps\\SummerMap.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\Maps\\SummerMap.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Maps\\SummerMap.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T11:13:34.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UINavigator.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\UINavigator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UINavigator.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\UINavigator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UINavigator.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T14:13:12.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WinterMap.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\Maps\\WinterMap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Maps\\WinterMap.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\Maps\\WinterMap.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Maps\\WinterMap.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T11:14:33.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "GameManager.cs",
               "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -159,19 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EnemyController.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyController.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T14:18:04.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
@@ -183,31 +230,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WinterMap.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\WinterMap.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WinterMap.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\WinterMap.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WinterMap.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAACAAAA",
+              "DocumentIndex": 10,
+              "Title": "MainMenuUI.cs",
+              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T13:04:38.168Z"
+              "WhenOpened": "2024-06-04T14:13:00.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EnemyManager.cs",
-              "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyManager.cs",
-              "ToolTip": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\EnemyManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T13:59:35.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "RideType.cs",
               "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\Enums\\RideType.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enums\\RideType.cs",
@@ -219,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MapType.cs",
               "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\Enums\\MapType.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enums\\MapType.cs",
@@ -231,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UIManager.cs",
               "DocumentMoniker": "K:\\UnityProjects\\StreetRacer_Beta\\Assets\\Scripts\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",

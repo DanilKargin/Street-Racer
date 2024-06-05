@@ -39,11 +39,13 @@ public class GameUI : MonoBehaviour
 	{
 		UINavigator.Instance.OpenPanel(_gamePanel);
 		LevelManager.Instance.SetRideType(RideType.MONO);
+		LevelManager.Instance.GameStarted();
 	}
 	public void SelectDuoRide()
 	{
 		UINavigator.Instance.OpenPanel(_gamePanel);
 		LevelManager.Instance.SetRideType(RideType.DUO);
+		LevelManager.Instance.GameStarted();
 	}
 	public void SetDistanceText(string text)
 	{

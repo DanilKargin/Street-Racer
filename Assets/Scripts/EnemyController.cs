@@ -23,7 +23,7 @@ namespace StreetRacer
 		{
 			if (GameManager.Singleton.GameStatus == GameStatus.PLAYING)
 			{
-				transform.Translate(-transform.forward * _moveSpeed * Random.Range(0.4f, 0.8f) * Time.deltaTime);
+				transform.Translate(transform.forward * _moveSpeed * Random.Range(0.4f, 0.8f) * Time.deltaTime);
 
 				if (transform.position.z <= -10)
 				{
