@@ -11,8 +11,7 @@ namespace StreetRacer
 		protected List<GameObject> _roadList;
 		private int _roadAtLastIndex, _roadAtTopIndex;
 
-		[SerializeField]
-		private float _moveSpeed = 30;
+		protected float _moveSpeed;
 
 		public abstract void DrawMap();
 		public void MoveRoad(GameObject gm)
@@ -40,7 +39,7 @@ namespace StreetRacer
 				}
 			}
 		}
-		~MapManager()
+		public void Clear()
 		{
 			Object.Destroy(_roadHolder);
 		}

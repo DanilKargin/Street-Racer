@@ -8,31 +8,34 @@ namespace StreetRacer
         private float _endXpos = 0f;
         private Rigidbody _carObject;
 		private Collider _colliderComponent;
+		private GameObject child;
 
-		[SerializeField]
-		private float Control = 0.03f;
+		private float _control;
+		private float _speed;
 
-		private void Start()
+		public float Speed { get { return _speed; } }
+
+		private void Awake()
 		{		
 			_carObject = GetComponent<Rigidbody>();
 			_carObject.isKinematic = true;
 			_carObject.useGravity = false;
-			SpawnVehicle(GameManager.Singleton.CurrentCarIndex);
+			int carIndex = GameManager.Singleton.Player.CurrentCarIndex;
+			var carData = GameManager.Singleton.Cars[carIndex].GetComponent<Car>().CarData;
+			SpawnVehicle(carIndex);
+			_speed = carData.Speed;
+			_control = carData.Control;
 		}
 		private void Update()
 		{
 			if (InputManager.Instance.MoveRight)
 			{
-				MoveCar(Control);
+				MoveCar(_control);
 			}
 			if(InputManager.Instance.MoveLeft)
 			{
-				MoveCar(-Control);
+				MoveCar(-_control);
 			}
-		}
-		public void GameStarted()
-		{
-
 		}
 
 		public void SpawnVehicle(int index)
@@ -42,13 +45,12 @@ namespace StreetRacer
 				Destroy(transform.GetChild(0).gameObject);
 			}
 
-			GameObject child = Instantiate(LevelManager.Instance.VehiclePrefabs[index], transform);
+			child = Instantiate(GameManager.Singleton.Cars[index], transform);
 			child.transform.localScale = new Vector3(240.0f, 240.0f, 240.0f);
 			child.transform.Rotate(0, -90, 0);
 			_colliderComponent = child.GetComponent<Collider>();
 			_colliderComponent.isTrigger = true;
 		}
-
 		private void MoveCar(float direction)
 		{
 			_endXpos = transform.position.x + direction;
@@ -67,13 +69,18 @@ namespace StreetRacer
 				{
 					Destroy(this);
 					LevelManager.Instance.GameOver();
-					//_carObject.isKinematic = false;
-					_carObject.useGravity = true;
+					_carObject.isKinematic = false;
+					//_carObject.useGravity = true;
 					_carObject.AddForce(UnityEngine.Random.insideUnitCircle.normalized * 100f);
 					_colliderComponent.isTrigger = false;
 				}
 
 			}
+		}
+		public void Clear()
+		{
+			Destroy(child);
+			transform.position = Vector3.zero;
 		}
 	}
 }

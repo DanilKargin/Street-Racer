@@ -9,8 +9,7 @@ namespace StreetRacer
     public class UINavigator : MonoBehaviour
     {
         public static UINavigator Instance;
-        [SerializeField]
-        private GameObject MainMenuPanel;
+        public GameObject MainMenuPanel;
 
         private GameObject _currentPanel;
         private Stack<GameObject> _openPanels;
@@ -47,18 +46,5 @@ namespace StreetRacer
             _currentPanel.SetActive(false);
             _currentPanel = panel;
         }
-        //public void PlayButton()
-        //{
-
-        //    LevelManager.Instance.GameStarted();
-        //}
-        //public void RetryButton()
-        //{
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //}
-        //public void GameOver()
-        //{
-        //    GameOverPanel.SetActive(true);
-        //}
     }
 }

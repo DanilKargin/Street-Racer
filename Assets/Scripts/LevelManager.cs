@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -19,16 +20,19 @@ namespace StreetRacer
 		[SerializeField]
 		private GameObject _winterPrefab, _summerPrefab;
 		[SerializeField]
-		private float _gameTimer2;
+		private float _spawnDelay = 0;
 
 		private MapManager _mapManager;
+		private EnemyManager _enemyManager;
 		private PlayerController _playerController;
+
 		private MapType _mapType = MapType.SUMMER;
 		private RideType _rideType = RideType.MONO;
 
-		private EnemyManager _enemyManager;
+
 		private int _playerScore = 0;
 		private float _gameTimer;
+		private GameObject player;
 
 		public PlayerController PlayerController { get { return _playerController; } }
 		public GameObject[] VehiclePrefabs { get { return _vehaclePrefabs; } }
@@ -48,14 +52,12 @@ namespace StreetRacer
 
 		private void Start()
 		{
-			_mapManager = new SummerMap(_summerPrefab);
-
-			SpawnPlayer();
+			player = new GameObject("Player");
 		}
 		private void SpawnPlayer()
 		{
-			GameObject player = new GameObject("Player");
 			player.transform.position = new Vector3(0, 0, 13);
+			player.transform.rotation = Quaternion.identity;
 			player.AddComponent<PlayerController>();
 			_playerController = player.GetComponent<PlayerController>();
 		}
@@ -66,29 +68,21 @@ namespace StreetRacer
 			{
 				_gameTimer += Time.deltaTime;
 				_mapManager.MoveRoad(this.gameObject);
-				_gameTimer2 += Time.deltaTime;
+				_spawnDelay += Time.deltaTime;
 				if (_gameTimer > 0.1f)
 				{
 					_playerScore += 2;
 					GameUI.Instance.SetDistanceText(_playerScore.ToString());
 					_gameTimer = 0;
 				}
-				if(_gameTimer2 > 5)
+				if(_spawnDelay > 3)
 				{
 					_enemyManager.ActivateEnemy();
-					_gameTimer2 = 0;
+					_spawnDelay = 0;
 				}
 			}
 		}
 
-
-		private void OnTriggerEnter(Collider other)
-		{
-			if (other.GetComponent<EnemyController>())
-			{
-				_enemyManager.ActivateEnemy();
-			}
-		}
 		public void SetRideType(RideType type)
 		{
 			_rideType = type;
@@ -101,41 +95,50 @@ namespace StreetRacer
 		{
 			if(_mapType == MapType.SUMMER)
 			{
-				_mapManager = new SummerMap(_summerPrefab);
+				_mapManager = new SummerMap(_summerPrefab, PlayerController.Speed);
 			}
 			else if(_mapType == MapType.WINTER)
 			{
-				_mapManager = new WinterMap(_winterPrefab);
+				_mapManager = new WinterMap(_winterPrefab, PlayerController.Speed);
 			}
 		}
 		private void SetupEnemyManager()
 		{
 			if (_rideType == RideType.MONO)
 			{
-				_enemyManager = new MonoEnemySpawner(_nextRoadPosition, 30);
+				_enemyManager = new MonoEnemySpawner(_nextRoadPosition, PlayerController.Speed - 8);
 			}
 			else if (_rideType == RideType.DUO)
 			{
-				_enemyManager = new DuoEnemySpawner(_nextRoadPosition, 30);
+				_enemyManager = new DuoEnemySpawner(_nextRoadPosition, PlayerController.Speed - 8);
 			}
+		}
+		private void ClearLevelSettings()
+		{
+			_mapManager?.Clear();
+			_enemyManager?.Clear();
+			PlayerController?.Clear();
 		}
 		public void GameOver()
 		{
-			_gameOverScoreText.text = "Количество очков: " + _playerScore.ToString();
 			GameManager.Singleton.GameStatus = GameStatus.FAILED;
-			//UINavigator.Instance.GameOver();
+			GameUI.Instance.GameOver("Количество очков: " + _playerScore.ToString());
 		}
 
 		public void GameStarted()
 		{
+			ClearLevelSettings();
+
+			SpawnPlayer();
+
 			SetupMapManager();
 			SetupEnemyManager();
+
 			_enemyManager.SpawnEnemies(_vehaclePrefabs);
 			_mapManager.DrawMap();
 
 			GameManager.Singleton.GameStatus = GameStatus.PLAYING;
 			_playerScore = 0;
-			_playerController.GameStarted();
 		}
 	}
 }

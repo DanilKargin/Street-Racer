@@ -47,7 +47,7 @@ namespace StreetRacer
 			enemy.gameObject.SetActive(false);
 			_deactiveEnemyList.Add(enemy);
 		}
-		~EnemyManager()
+		public void Clear()
 		{
 			Object.Destroy(_enemyHolder);
 		}

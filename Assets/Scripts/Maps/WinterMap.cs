@@ -9,10 +9,11 @@ public class WinterMap : MapManager
 
 	private Vector3 _nextRoadPosition = new Vector3(0, -2.2f, 0);
 
-	public WinterMap(GameObject mapPrefab)
+	public WinterMap(GameObject mapPrefab, float speed)
 	{
 		_roadPrefab = mapPrefab;
 		_roadHolder = new GameObject("RoadHolder");
+		base._moveSpeed = speed;
 	}
 	public override void DrawMap()
 	{

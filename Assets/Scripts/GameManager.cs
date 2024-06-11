@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace StreetRacer
@@ -9,8 +10,9 @@ namespace StreetRacer
 		[HideInInspector]
 		public GameStatus GameStatus = GameStatus.NONE;
 		[HideInInspector]
-		public int CurrentCarIndex = 0;
+		public Player Player = null;
 
+		public List<GameObject> Cars;
 		private void Awake()
 		{
 			if(Singleton == null)
@@ -26,6 +28,11 @@ namespace StreetRacer
 		private void Start()
 		{
 			GameManager.Singleton.GameStatus = GameStatus.NONE;
+			GameManager.Singleton.Player = UserController.Instance.LoadPlayerData();
+		}
+		public void OnApplicationQuit()
+		{
+			UserController.Instance.SavePlayerData(Player);
 		}
 	}
 }

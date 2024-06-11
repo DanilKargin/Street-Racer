@@ -11,10 +11,11 @@ namespace StreetRacer
 
 		private Vector3 _nextRoadPosition = new Vector3(0, -0.2f, 0);
 		
-		public SummerMap(GameObject mapPrefab)
+		public SummerMap(GameObject mapPrefab, float speed)
 		{
 			_roadPrefab = mapPrefab;
 			_roadHolder = new GameObject("RoadHolder");
+			base._moveSpeed = speed;
 		}
 		public override void DrawMap()
 		{
