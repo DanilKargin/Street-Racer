@@ -45,6 +45,7 @@ namespace StreetRacer {
 				_carHolder.transform.position -= Vector3.right * 30 * _carIndex;
                 SetPlayerCash();
 				UpdateDisplayUI(GameManager.Singleton.Cars[_carIndex].GetComponent<Car>().CarData);
+				SetButtonState();
 			}
             else
             {

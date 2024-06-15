@@ -70,7 +70,7 @@ namespace StreetRacer
 					Destroy(this);
 					LevelManager.Instance.GameOver();
 					_carObject.isKinematic = false;
-					//_carObject.useGravity = true;
+					_carObject.useGravity = true;
 					_carObject.AddForce(UnityEngine.Random.insideUnitCircle.normalized * 100f);
 					_colliderComponent.isTrigger = false;
 				}
@@ -80,7 +80,6 @@ namespace StreetRacer
 		public void Clear()
 		{
 			Destroy(child);
-			transform.position = Vector3.zero;
 		}
 	}
 }

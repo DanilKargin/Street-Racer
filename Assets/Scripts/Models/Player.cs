@@ -50,4 +50,8 @@ public class Player
 		}
 		return false;
 	}
+	public void AddPlayerCash(int cash)
+	{
+		PlayerCash += cash;
+	}
 }

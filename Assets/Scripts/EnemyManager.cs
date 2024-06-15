@@ -6,7 +6,7 @@ namespace StreetRacer
 {
 	public abstract class EnemyManager
 	{
-		protected List<EnemyController> _deactiveEnemyList;
+		protected List<GameObject> _deactiveEnemyList;
 		protected Vector3[] _enemySpawnPosition = new Vector3[4];
 
 		protected GameObject _enemyHolder;
@@ -15,7 +15,7 @@ namespace StreetRacer
 		public EnemyManager(Vector3 spawnPos, float moveSpeed)
 		{
 			_moveSpeed = moveSpeed;
-			_deactiveEnemyList = new List<EnemyController>();
+			_deactiveEnemyList = new List<GameObject>();
 
 			_enemySpawnPosition[0] = spawnPos - Vector3.right * 10;
 			_enemySpawnPosition[1] = spawnPos - Vector3.right * 4;
@@ -36,13 +36,13 @@ namespace StreetRacer
 				enemy.name = "Enemy";
 				enemy.AddComponent<EnemyController>();
 				enemy.GetComponent<EnemyController>().SetDefault(this, _moveSpeed);
-				_deactiveEnemyList.Add(enemy.GetComponent<EnemyController>());
+				_deactiveEnemyList.Add(enemy);
 			}
 		}
 
 		public abstract void ActivateEnemy();
 
-		public void DeactivateEnemy(EnemyController enemy)
+		public void DeactivateEnemy(GameObject enemy)
 		{
 			enemy.gameObject.SetActive(false);
 			_deactiveEnemyList.Add(enemy);

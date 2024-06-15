@@ -13,20 +13,21 @@ public class DuoEnemySpawner : EnemyManager
 	{
 		if (_deactiveEnemyList.Count > 0)
 		{
-			EnemyController enemy = _deactiveEnemyList[Random.Range(0, _deactiveEnemyList.Count)].gameObject.GetComponent<EnemyController>();
+			GameObject enemy = _deactiveEnemyList[Random.Range(0, _deactiveEnemyList.Count)];
 			_deactiveEnemyList.Remove(enemy);
 			int index = Random.Range(0, _enemySpawnPosition.Length);
 			enemy.transform.position = _enemySpawnPosition[index];
+			EnemyController controller = enemy.GetComponent<EnemyController>();
 			if (index <= 1)
 			{
 				enemy.transform.Rotate(0, 90, 0);
-				enemy.SetDefault(this, _moveSpeed * 4);
+				controller.SetDefault(this, _moveSpeed * 4);
 			}
 			else
 			{
 				enemy.transform.Rotate(0, -90, 0);
 			}
-			enemy.ActivateEnemy();
+			controller.ActivateEnemy();
 		}
 	}
 }

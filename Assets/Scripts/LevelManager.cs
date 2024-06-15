@@ -123,6 +123,7 @@ namespace StreetRacer
 		{
 			GameManager.Singleton.GameStatus = GameStatus.FAILED;
 			GameUI.Instance.GameOver("Количество очков: " + _playerScore.ToString());
+			GameManager.Singleton.Player.AddPlayerCash(_playerScore / 2);
 		}
 
 		public void GameStarted()

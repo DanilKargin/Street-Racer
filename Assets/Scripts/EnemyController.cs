@@ -27,7 +27,7 @@ namespace StreetRacer
 
 				if (transform.position.z <= -10)
 				{
-					_enemyManager.DeactivateEnemy(this);
+					_enemyManager.DeactivateEnemy(gameObject);
 				}
 			}
 		}

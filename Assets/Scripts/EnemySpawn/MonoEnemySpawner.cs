@@ -13,12 +13,13 @@ public class MonoEnemySpawner : EnemyManager
 	{
 		if (_deactiveEnemyList.Count > 0)
 		{
-			EnemyController enemy = _deactiveEnemyList[Random.Range(0, _deactiveEnemyList.Count)].gameObject.GetComponent<EnemyController>();
+			GameObject enemy = _deactiveEnemyList[Random.Range(0, _deactiveEnemyList.Count)];
 			_deactiveEnemyList.Remove(enemy);
 			int index = Random.Range(0, _enemySpawnPosition.Length);
 			enemy.transform.position = _enemySpawnPosition[index];
 			enemy.transform.Rotate(0, -90, 0);
-			enemy.ActivateEnemy();
+			
+			enemy.GetComponent<EnemyController>().ActivateEnemy();
 		}
 	}
 }

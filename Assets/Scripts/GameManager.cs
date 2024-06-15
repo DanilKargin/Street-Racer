@@ -30,7 +30,7 @@ namespace StreetRacer
 			GameManager.Singleton.GameStatus = GameStatus.NONE;
 			GameManager.Singleton.Player = UserController.Instance.LoadPlayerData();
 		}
-		public void OnApplicationQuit()
+		public void OnApplicationPause()
 		{
 			UserController.Instance.SavePlayerData(Player);
 		}
